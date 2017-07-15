@@ -4,22 +4,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Lyle Jantzi III</title>
- <link href="http://www.lylecubed.com/atom.xml" rel="self"/>
- <link href="http://www.lylecubed.com/"/>
+ <link href="http://www.lylejantzi3rd.github.io/atom.xml" rel="self"/>
+ <link href="http://www.lylejantzi3rd.github.io/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://www.lylecubed.com/</id>
+ <id>http://www.lylejantzi3rd.github.io/</id>
  <author>
    <name>Lyle Jantzi III</name>
-   <email>lyle@lylecubed.com</email>
+   <email>lyle@lylejantzi3rd.github.io</email>
  </author>
 
  {% assign sorted = (site.articles | sort: 'date') | reverse %}
  {% for article in sorted %}
  <entry>
    <title>{{ article.title }}</title>
-   <link href="http://www.lylecubed.com{{ article.url }}"/>
+   <link href="http://www.lylejantzi3rd.github.io{{ article.url }}"/>
    <updated>{{ article.date | date_to_xmlschema }}</updated>
-   <id>http://www.lylecubed.com{{ article.id }}</id>
+   <id>http://www.lylejantzi3rd.github.io{{ article.id }}</id>
    <content type="html">{{ article.content | xml_escape }}</content>
  </entry>
  {% endfor %}
