@@ -1,7 +1,0 @@
-gems:
-    - jekyll-seo-tag
-
-collections:
-    articles:
-        output: true
-        permalink: /:collection/:path/
